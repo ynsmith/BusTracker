@@ -1,0 +1,79 @@
+<html>
+
+<script>
+var arrOfRoutes = [5];
+var tableArr = [5];
+arrOfRoutes = getBusRoutes();
+var index = 0;
+<!--
+	//populateBusRoutes();
+-->
+
+function addRoute(){
+document.getElementById("myRoute");
+}
+
+
+function getBusRoutes(){
+	var arrayOfRoutes = ["23", "Gold", "blue"];  //this should be some 
+	
+	
+	//handles if list is empty
+	if(arrayOfRoutes == NaN){
+		document.write("no routes available");
+		//maybe ask to select another rout
+		
+	}
+	
+	return arrayOfRoutes;
+}
+
+function populateBusRoutes(){
+	 document.write("I am in the populate method<br>");
+	 document.write("ArrOfRoutes Length: " + arrOfRoutes.length +"<br>");
+	 var doc = document.getElementById("myRoute");
+	 document.write("doc Value: "+ doc +"<br>");
+	for (index = 0; index < arrOfRoutes.length; index++){
+		document.write("I am in the for loop<br>");
+		document.write("Index: " + index + "<br>");
+		var opt = document.createElement('option');
+		opt.innerHTML = arrOfRoutes[index];
+		opt.value = arrOfRoutes[index];
+		doc.appendChild(opt);
+		document.write("new" +arrOfRoutes[index] + "<br />");
+	}
+
+}
+
+</script>
+
+<noscript>
+<h3> This site requires JavaScript </h3>
+</noscript>
+
+
+
+<title> JavaScript Tutorial </title>
+
+<body>
+
+<form>
+
+<select id = "myRoute" onchange = "">
+<option>Select Route</option>
+
+<script>populateBusRoutes()</script>
+-->
+</select>
+
+
+
+</form>
+
+
+
+
+</body>
+
+
+</html>
