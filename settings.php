@@ -51,37 +51,37 @@ $xml->appendChild($root);
 
 
 /**
-	$param1 = $_GET['dropDownID'];
-	if(strcmp($param1,$routes) == 0){
-	$file = 'txt.xml';
-		if (file_exists($file)) {
-			$xml = simplexml_load_file($file);
-			 echo ($xml->asXML());
-		} else {
-				exit('Failed to open '.$file);
-		}
+	// $param1 = $_GET['dropDownID'];
+	// if(strcmp($param1,$routes) == 0){
+	// $file = 'txt.xml';
+	// 	if (file_exists($file)) {
+	// 		$xml = simplexml_load_file($file);
+	// 		 echo ($xml->asXML());
+	// 	} else {
+	// 			exit('Failed to open '.$file);
+	// 	}
 		
 
-	}else if(strcmp($param1,$routeDir) == 0){
-		$file = 'directions.xml';
-		if (file_exists($file)) {
-			$xml = simplexml_load_file($file);
-			$param2 = $_GET['rt'];
-			//echo $param2;
-			echo '<?xml version="1.0" ?>';
-			echo '<dir>';
-			 echo htmlentities($xml->$param2->dir[0]);
-			 echo '</dir>';
-			 echo '<dir>';
-			 echo htmlentities($xml->$param2->dir[1]);
-			 echo '</dir>';
-		} else {
-				exit('Failed to open '.$file);
-		}
+	// }else if(strcmp($param1,$routeDir) == 0){
+	// 	$file = 'directions.xml';
+	// 	if (file_exists($file)) {
+	// 		$xml = simplexml_load_file($file);
+	// 		$param2 = $_GET['rt'];
+	// 		//echo $param2;
+	// 		echo '<?xml version="1.0" ?>';
+	// 		echo '<dir>';
+	// 		 echo htmlentities($xml->$param2->dir[0]);
+	// 		 echo '</dir>';
+	// 		 echo '<dir>';
+	// 		 echo htmlentities($xml->$param2->dir[1]);
+	// 		 echo '</dir>';
+	// 	} else {
+	// 			exit('Failed to open '.$file);
+	// 	}
 		
-	}else{	
-		echo 'This is param1 '.$param1;
-	}
+	// }else{	
+	// 	echo 'This is param1 '.$param1;
+	// }
 	
 **/
 
